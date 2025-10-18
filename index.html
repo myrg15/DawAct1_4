@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despliegue</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección de Carrera</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Módulos de Desarrollo de Aplicaciones Web</h1>
-    <ul>
-         <li>Despligue de Aplicaciones Web</li>
-	     <li>Programación</li>
-	     <li>Bases de datos</li>
-         <li>Diseño de interfaces web</li>
-	     <li>Desarrollo web en entorno servidores</li>
-    </ul>
+  <div class="container">
+    <h1>Selecciona la carrera que deseas estudiar</h1>
+
+    <label for="carrera">Carrera:</label>
+    <select id="carrera">
+      <option value="">-- Selecciona una carrera --</option>
+      <option value="daw">Desarrollo de Aplicaciones Web</option>
+      <option value="dam">Desarrollo de Aplicaciones Multiplataforma</option>
+      <option value="asir">Administración de Sistemas Informáticos en Red</option>
+    </select>
+
+    <div id="modulos" class="hidden">
+      <h2>Módulos de la carrera</h2>
+      <ul id="lista-modulos"></ul>
+    </div>
+
+    <div class="botones">
+      <button onclick="limpiarSeleccion()">Limpiar selección</button>
+      <a href="#" id="enlace-info">Más información</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
