@@ -1,7 +1,7 @@
 # Breve resumen del uso del lenguaje Markdown
 Mencionaremos algunas particularidades del lenguaje Markdown para el archivo README y el servicio GitHub Pages, que nos permite publicar una web estática que está vinculada automáticamente con nuestro repositorio y refleja instantáneamente los cambios que vayamos haciendo. 
 
-# Introduccción a Markdown
+### Introduccción a Markdown
 Github permite crear documentación de forma sencilla generando un archivo llamado 
 README.md. También permite crear una web propia para el proyecto y, además, una wiki. Para 
 marcar el texto, se utiliza un lenguaje de marcado de texto denominado Markdown. 
@@ -14,12 +14,10 @@ Esta es la sintaxis básica:
 <tr style="background-color:#ADD8E6;">
     <th>Element</th>
     <th>Markdown syntax</th>
-  </tr>
+</tr>
   <tr>
     <td>Heading</td>
-    <td># H1</td>
-    <td>## H2</td>
-    <td>### H3</td>
+    <td># H1 ## H2 ### H3</td>
   </tr>
   <tr style="background-color:#0000FF;">
     <td>Bold</td>
@@ -37,10 +35,10 @@ Esta es la sintaxis básica:
     <td>Ordered List</td>
     <td>
     <lu>
-        <ol>First item</ol>
-        <ol>Second item</ol>
-        <ol>Third item</ol>
-    </lu>>
+        <ol>1.- First item</ol>
+        <ol>2.- Second item</ol>
+        <ol>3.- Third item</ol>
+    </lu>
     </td>
   </tr>
   <tr style="background-color:#0000FF;">
@@ -50,7 +48,7 @@ Esta es la sintaxis básica:
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
-    </lu>>
+    </lu>
     </td>
   </tr>
   <tr>
