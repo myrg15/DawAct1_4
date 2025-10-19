@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -13,12 +14,14 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 400px;
+  width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 h1, h2 {
   text-align: center;
-  color: #0066cc;
+  color: #522bc5;
 }
 
 select {
@@ -30,8 +33,26 @@ select {
 }
 
 ul {
-  list-style-type: square;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 6px 8px;
+  margin: 3px 0;
+  background-color: #f8f9fb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+ul li:nth-child(even) {
+  background-color: #eef2f6;
+}
+
+ul li:hover {
+  background-color: #dde7f3;
 }
 
 .hidden {
@@ -45,7 +66,7 @@ ul {
 }
 
 button {
-  background-color: #0066cc;
+  background-color: #522bc5;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -59,10 +80,15 @@ button:hover {
 
 a {
   text-decoration: none;
-  color: #0066cc;
+  color: #522bc5;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
 }

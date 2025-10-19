@@ -18,17 +18,19 @@
       <option value="asir">Administración de Sistemas Informáticos en Red</option>
     </select>
 
-    <div id="modulos" class="hidden">
-      <h2>Módulos de la carrera</h2>
-      <ul id="lista-modulos"></ul>
+   <div id="modulos" class="hidden">
+      <h2 id="titulo-modulos">Módulos de la carrera</h2>
+      <form id="form-modulos">
+        <ul id="lista-modulos"></ul>
+      </form>
     </div>
 
     <div class="botones">
       <button onclick="limpiarSeleccion()">Limpiar selección</button>
-      <a href="#" id="enlace-info">Más información</a>
+      <a href="#titulo-modulos" id="enlace-info">Más información</a>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="carrera.js"></script>
 </body>
 </html>
