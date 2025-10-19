@@ -6,25 +6,33 @@ const enlaceInfo = document.getElementById("enlace-info");
 // Datos de módulos por carrera
 const modulosPorCarrera = {
   daw: [
-    "Despliegue de Aplicaciones Web",
+    "Lenguajes de marcas y sistemas de gestión de información",
+    "Sistemas informáticos",
+    "Bases de datos",
     "Programación",
-    "Bases de Datos",
-    "Diseño de Interfaces Web",
-    "Desarrollo Web en Entorno Servidor"
+    "Entornos de desarrollo",
+    "Inglés profesional GS",
+    "Itinerario personal para la empleabilidad I",
+    "Proyecto intermodular I",
+    "Despliegue de aplicaciones web",
+    "Desarrollo web en entorno servidor"
   ],
   dam: [
     "Programación",
-    "Acceso a Datos",
-    "Interfaces Gráficas",
-    "Programación Multimedia",
-    "Sistemas de Gestión Empresarial"
+    "Acceso a datos",
+    "Interfaces gráficas",
+    "Programación multimedia",
+    "Sistemas de gestión empresarial",
+    "Proyecto intermodular I",
+    "Inglés profesional GS"
   ],
   asir: [
-    "Planificación y Administración de Redes",
-    "Implantación de Sistemas Operativos",
-    "Administración de Sistemas Gestores de Bases de Datos",
-    "Seguridad y Alta Disponibilidad",
-    "Servicios de Red e Internet"
+    "Planificación y administración de redes",
+    "Implantación de sistemas operativos",
+    "Administración de bases de datos",
+    "Seguridad y alta disponibilidad",
+    "Servicios de red e internet",
+    "Inglés profesional GS"
   ]
 };
 
@@ -38,13 +46,16 @@ carreraSelect.addEventListener("change", function() {
     return;
   }
 
-  // Mostrar módulos correspondientes
+  // Mostrar módulos con checkboxes
   const modulos = modulosPorCarrera[seleccion];
-  listaModulos.innerHTML = modulos.map(m => `<li>${m}</li>`).join("");
+  listaModulos.innerHTML = modulos
+    .map(m => `<li><label><input type="checkbox" value="${m}"> ${m}</label></li>`)
+    .join("");
+
   modulosDiv.classList.remove("hidden");
 
   // Cambiar enlace de información
-  enlaceInfo.href = `https://www.google.com/search?q=${encodeURIComponent(seleccion)}+grado+superior`;
+  enlaceInfo.href = "#titulo-modulos";
 });
 
 // Botón para limpiar
